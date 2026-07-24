@@ -25,6 +25,12 @@
           "resource": "DataRecord_4_SpeciesDescriptions_18Jun2024.csv",
           "columnReference": "sourceTaxonName"
         }
+      }, {
+        "columnReference": "sourceTaxonName",
+        "reference": {
+          "resource": "DataRecord_5_SpeciesListWithAccnNum_Oct2023_edited20260724.csv",
+          "columnReference": "sourceTaxonName"
+        }
       }],
       "columns" : [ {
         "name" : "sourceTaxonName",
@@ -144,6 +150,31 @@
         "name" : "referenceCitation",
         "titles" : "Citation",
         "datatype" : "string"
+      } ]
+    }
+  }, {
+    "@context" : [ "http://www.w3.org/ns/csvw", {
+      "@language" : "en"
+    } ],
+    "rdfs:comment" : [ "inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/" ],
+    "url" : "DataRecord_5_SpeciesListWithAccnNum_Oct2023_edited20260724.csv",
+    "dcterms:bibliographicCitation" : "Chaudhary, Bala; Nokes, Liam; Gonzalez, Jennifer et al. (2025). TraitAM, a global spore trait database for arbuscular mycorrhizal fungi [Dataset]. Dryad. https://doi.org/10.5061/dryad.6hdr7sr8z",
+    "delimiter" : ",",
+    "headerRowCount" : 1,
+    "null" : [ "" ],
+    "tableSchema" : {
+      "primaryKey": "sourceTaxonName",
+      "columns" : [ {
+        "name" : "sourceTaxonName",
+        "titles" : "Species name",
+        "datatype" : "string"
+      }, {
+        "name" : "sourceOccurrenceId",
+        "titles" : "Genbank Accession number",
+        "datatype" : {
+           "base": "string",
+           "valueUrl": "https://www.ncbi.nlm.nih.gov/nuccore/{sourceOccurrenceId}"
+        } 
       } ]
     }
   } ]
