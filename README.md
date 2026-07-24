@@ -515,3 +515,11 @@ being
   }
 }
 ```
+
+# Indexing 
+
+[![GloBI Review by Elton](../../actions/workflows/review.yml/badge.svg)](../../actions/workflows/review.yml) [![GloBI](https://api.globalbioticinteractions.org/interaction.svg?accordingTo=globi:globalbioticinteractions/traitam&refutes=true&refutes=false)](https://globalbioticinteractions.org/?accordingTo=globi:globalbioticinteractions/traitam)
+
+Configuration to help Global Biotic Interactions (GloBI, https://globalbioticinteractions.org) index: 
+
+Chaudhary, Bala; Nokes, Liam; Gonzalez, Jennifer et al. (2025). TraitAM, a global spore trait database for arbuscular mycorrhizal fungi [Dataset]. Dryad. https://doi.org/10.5061/dryad.6hdr7sr8z

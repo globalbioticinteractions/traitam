@@ -1,0 +1,150 @@
+{
+  "@context" : [ "http://www.w3.org/ns/csvw", {
+    "@language" : "en"
+  } ],
+  "rdfs:comment" : [ "inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/" ],
+  "tables" : [ {
+    "@context" : [ "http://www.w3.org/ns/csvw", {
+      "@language" : "en"
+    } ],
+    "rdfs:comment" : [ "inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/" ],
+    "url" : "DataRecord_2_TraitAMraw_18Jun2024.csv.csv",
+    "dcterms:bibliographicCitation" : "Chaudhary, Bala; Nokes, Liam; Gonzalez, Jennifer et al. (2025). TraitAM, a global spore trait database for arbuscular mycorrhizal fungi [Dataset]. Dryad. https://doi.org/10.5061/dryad.6hdr7sr8z",
+    "delimiter" : ",",
+    "headerRowCount" : 1,
+    "null" : [ "" ],
+    "interactionTypeName": "hasArbuscularMycorrhizalHost",
+    "interactionTypeId": "http://purl.obolibrary.org/obo/RO_0002807", 
+    "targetTaxonKingdomName": "Plantae",
+    "targetBodyPartName": "root",
+    "targetBodyPartId": "http://purl.obolibrary.org/obo/PO_0009005",
+    "tableSchema" : {
+      "foreignKeys": [{
+        "columnReference": "sourceTaxonName",
+        "reference": {
+          "resource": "DataRecord_4_SpeciesDescriptions_18Jun2024.csv",
+          "columnReference": "sourceTaxonName"
+        }
+      }],
+      "columns" : [ {
+        "name" : "sourceTaxonName",
+        "titles" : "good.names",
+        "datatype" : "string"
+      }, {
+        "name" : "sourceTaxonOrderName",
+        "titles" : "order",
+        "datatype" : "string"
+      }, {
+        "name" : "sourceTaxonFamilyName",
+        "titles" : "family",
+        "datatype" : "string"
+      }, {
+        "name" : "sourceTaxonGenusName",
+        "titles" : "genus",
+        "datatype" : "string"
+      }, {
+        "name" : "color_low",
+        "titles" : "color_low",
+        "datatype" : "string"
+      }, {
+        "name" : "color_most",
+        "titles" : "color_most",
+        "datatype" : "string"
+      }, {
+        "name" : "color_high",
+        "titles" : "color_high",
+        "datatype" : "string"
+      }, {
+        "name" : "orn_height_min",
+        "titles" : "orn_height_min",
+        "datatype" : "string"
+      }, {
+        "name" : "orn_height_mean",
+        "titles" : "orn_height_mean",
+        "datatype" : "string"
+      }, {
+        "name" : "orn_height_max",
+        "titles" : "orn_height_max",
+        "datatype" : "string"
+      }, {
+        "name" : "orn_diam_min",
+        "titles" : "orn_diam_min",
+        "datatype" : "string"
+      }, {
+        "name" : "orn_diam_mean",
+        "titles" : "orn_diam_mean",
+        "datatype" : "string"
+      }, {
+        "name" : "orn_diam_max",
+        "titles" : "orn_diam_max",
+        "datatype" : "string"
+      }, {
+        "name" : "min_wall_thickness",
+        "titles" : "min_wall_thickness",
+        "datatype" : "string"
+      }, {
+        "name" : "mean_wall_thickness",
+        "titles" : "mean_wall_thickness",
+        "datatype" : "string"
+      }, {
+        "name" : "max_wall_thickness",
+        "titles" : "max_wall_thickness",
+        "datatype" : "string"
+      }, {
+        "name" : "dim1.min2",
+        "titles" : "dim1.min2",
+        "datatype" : "string"
+      }, {
+        "name" : "dim1.min",
+        "titles" : "dim1.min",
+        "datatype" : "string"
+      }, {
+        "name" : "dim1.max",
+        "titles" : "dim1.max",
+        "datatype" : "string"
+      }, {
+        "name" : "dim1.max2",
+        "titles" : "dim1.max2",
+        "datatype" : "string"
+      }, {
+        "name" : "dim2.min2",
+        "titles" : "dim2.min2",
+        "datatype" : "string"
+      }, {
+        "name" : "dim2.min",
+        "titles" : "dim2.min",
+        "datatype" : "string"
+      }, {
+        "name" : "dim2.max",
+        "titles" : "dim2.max",
+        "datatype" : "string"
+      }, {
+        "name" : "dim2.max2",
+        "titles" : "dim2.max2",
+        "datatype" : "string"
+      } ]
+    }
+  }, {
+    "@context" : [ "http://www.w3.org/ns/csvw", {
+      "@language" : "en"
+    } ],
+    "rdfs:comment" : [ "inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/" ],
+    "url" : "DataRecord_4_SpeciesDescriptions_18Jun2024.csv",
+    "dcterms:bibliographicCitation" : "Chaudhary, Bala; Nokes, Liam; Gonzalez, Jennifer et al. (2025). TraitAM, a global spore trait database for arbuscular mycorrhizal fungi [Dataset]. Dryad. https://doi.org/10.5061/dryad.6hdr7sr8z",
+    "delimiter" : ",",
+    "headerRowCount" : 1,
+    "null" : [ "" ],
+    "tableSchema" : {
+      "primaryKey": "sourceTaxonName",
+      "columns" : [ {
+        "name" : "sourceTaxonName",
+        "titles" : "good.names",
+        "datatype" : "string"
+      }, {
+        "name" : "referenceCitation",
+        "titles" : "Citation",
+        "datatype" : "string"
+      } ]
+    }
+  } ]
+}
