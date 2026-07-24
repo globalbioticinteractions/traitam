@@ -1,0 +1,101 @@
+# TraitAM, a global spore trait database for arbuscular mycorrhizal fungi
+
+[https://doi.org/10.5061/dryad.6hdr7sr8z](https://doi.org/10.5061/dryad.6hdr7sr8z)
+
+Contact: Dr. V. Bala Chaudhary, [bala.chaudhary@dartmouth.edu](mailto:bala.chaudhary@dartmouth.edu)
+
+**Filenames**: All files have names of the form "DataRecord_(number)*(contents)*(date updated, DDMonYYYY)," for example, "DataRecord_1_CalculatedTraitMetrics_18Jun2024.csv" is a data record #1, contains "calculated trait metrics," and was last updated on June 18th, 2024.
+
+TraitAM contains data on the spore traits of all Arbuscular Mycorrhizal (AM) fungi with available species descriptions through 2023. Data were collected by manually reading species descriptions and extracting relevant information from 2019 to 2024. For full description, methods, and metadata see publication:
+
+Chaudhary, V. B., Gonzalez, J. B., Nokes, L. F., Cooper, P. O., Katula, A. M., Mares, E. C., Limbu, S. P., Robinson, J. N., Aguilar-Trigueros, C. A. (2024). TraitAM, a global spore trait and phylogeny database for arbuscular mycorrhizal fungi. Manuscript submitted for publication.
+
+**Files:**
+
+* DataRecord_1_CalculatedTraitMetrics_18Jun2024.csv: Table containing the calculated trait metrics for all taxa in the database, including spore volume, shape, color, wall investment, and ornamentation height.
+
+- DataRecord_2_TraitAMraw_18Jun2024.csv: Table containing the raw data used to calculate the trait metrics in DataRecord_1. Cells containing "NA" reflect data that was not present in the species descriptions.
+
+* DataRecord_3_TraitMetricsCode_18Jun2024.R: R script containing the annotated code used to calculate the trait metrics in DataRecord_1 from the raw data in DataRecord_2.
+
+- DataRecord_4_SpeciesDescriptions_18Jun2024.csv: Table containing a list of all species in the TraitAM database and the bibliographic information for the paper containing the species description we used to collect data on the species for DataRecord_2.
+
+* DataRecord_5_SpeciesListWithAccnNum_Oct2023.csv: Table containing a list of species used in the creation of the Arbuscular Mycorrhizal fungal phylogeny, with the GenBank accession numbers for the sequences used in the creation of the phylogenetic tree.
+
+- DataRecord_6_LSUseqsLROR-FLR2_28Oct2023.fasta: LSU sequences used in phylogenetic analysis, trimmed to LROR-FLR2 (n=231).
+
+* DataRecord_7_FinalTree_Oct2023.tre: Phylogenetic tree generated from DataRecord_6.
+
+- DataRecord_8_PhyloanalysisCode_28Oct2023.txt: Code used in phylogenetic analysis for Maximum Likelihood and Bayesian Inference approaches used to generate DataRecord_7.
+
+**Metadata for DataRecord_1:**
+
+* species = species binomial nomenclature, followed by “_morpha” for acaulosporoid morphs and “_morphg” for glomoid morphs, if applicable
+
+- order = Taxonomic order of the species
+
+* family = Taxonomic family of the species
+
+- genus = Genus
+
+* vol_mean = Spore volume (μm3)
+
+- shape_mean = Spore shape, aspect ratio of spore length (μm) / spore width (μm)
+
+* color_most = Color mode (see metadata for DataRecord_2)
+
+- investment_mean = Spore wall investment, ratio of wall volume / total spore volume
+
+* orn_height_mean = Mean ornamentation height (μm) (see metadata for DataRecord_2)
+
+**Metadata for DataRecord_2:**
+
+* species = Species binomial nomenclature
+
+- order = Taxonomic order of the species
+
+* family = Taxonomic family of the species
+
+- genus = Genus
+
+* color_low = “Minimum” color: To standardize the color data across the database, we assigned the following ordinal scale for common color along a pigmentation gradient ranging from 0 (hyaline, no pigmentation) to 6 (fully melanized, dark). The intermediate values include 1, white to cream or pink, 2, yellow, 3, green, 4, orange to red, and 5, brown. For each species we include three color data points: minimum, mode, and maximum. If a spore with “yellow to yellow orange” it would have color minimum 2, color mode 2, and color maximum 4.
+
+- color_most = Color mode, see above
+
+* color_high = Color maximum, see above
+
+- orn_height_min = Minimum height of ornamentation, as given in species description. 0 if there is no ornamentation
+
+* orn_height_mean = Mean height of ornamentation, as given or as the average of the minimum and maximum given if not. 0 if there is no ornamentation
+
+- orn_height_max = Maximum height of ornamentation, as given. 0 if there is no maximum ornamentation
+
+* orn_diam_min = Minimum diameter of ornamentation, as given in species description. 0 if there is no ornamentation
+
+- orn_diam_mean = Mean diameter of ornamentation, as given or as the average of the minimum and maximum given if not. 0 if there is no ornamentation
+
+* orn_diam_max = Maximum diameter of ornamentation, as given. 0 if there is no maximum ornamentation
+
+- min_wall_thickness = Minimum wall thickness of the spores
+
+* mean_wall_thickness = Mean wall thickness of the spores
+
+- max_wall_thickness = Maximum wall thickness of the spores
+
+* dim1.min2 = Dimension 1 minimum 2 (lower minimum). Spore dimensions are given for each spore shape as ranges with up to four values describing the distribution of each dimension. The traitAM database includes eight dimension data points for each spore shape described: dimension lower minimum, dimension higher minimum, dimension lower maximum, and dimension higher maximum for two dimensions, length and width.
+
+- dim1.min = Dimension 1 minimum
+
+* dim1.max = Dimension 1 lower maximum
+
+- dim1.max2 = Dimension 1 upper maximum
+
+* dim2.min2 = Dimension 2 lower minimum
+
+- dim2.min = Dimension 2 upper minimum
+
+* dim2.max = Dimension 2 lower maximum
+
+- dim2.max2 = Dimension 2 upper maximum
+
+Changelog: all changes to the TraitAM database and any files will be logged here with a timestamp and a description of changes.

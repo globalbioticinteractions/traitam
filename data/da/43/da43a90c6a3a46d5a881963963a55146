@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dryad | Data: TraitAM, a global spore trait database for arbuscular mycorrhizal fungi</title>
+
+<link rel="icon" type="image/x-icon" href="/assets/favicon-381105ec103ec6f2519da8b31e4fea3ed2b83f8311210e09628e46c9f8372a2b.ico" />
+<link rel="apple-touch-icon" type="img/png" href="/assets/apple-touch-icon-fe7888a386e9dd5612627a6dc2e28ece54940b1af5e56e70029815a09b592dd2.png" sizes="180x180" />
+<link rel="icon" type="img/png" href="/assets/favicon-32x32-75913b3ea022fb29ad032115920e29ae6fcdceb279a2bcb51c3ee2c268d9c13d.png" sizes="32x32" />
+<link rel="icon" type="img/png" href="/assets/favicon-16x16-9895c314c40ffbf2768f3befd33a0e583bfa67544287a755fc6e465a7d04a8b5.png" sizes="16x16" />
+<link rel="mask-icon" type="img/svg" href="/assets/safari-pinned-tab-f9795139e7c031f68a2551731be1b362ce09518ab6e1b178df00c7e38be2a854.svg" color="#40853e" />
+<meta name="msapplication-TileColor" content="#40853e">
+<meta name="theme-color" content="#ffffff">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6CWE0T05CC"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-6CWE0T05CC');
+  </script>
+
+
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="CV9DnhvczYd3KR2_J4Daa0QIWOVIuyvCXi0DDVpUXixRntqN9INULNeRFIy-37QDxIYVIP4bMhrDskHSwa6cDw" />
+
+  <link rel="stylesheet" href="/assets/stash_engine/application-192147b7de8518c922c73d4a4b4b75acc6d80a5d2ac0258bb3dc1ad8cb074450.css" media="all" />
+<link rel="stylesheet" href="/assets/application-29e4690bcede95dd4fa78192ba0e3b57f80a44c3b6dfee9eba1005937d366495.css" media="all" />
+<link rel="stylesheet" href="/assets/stash_datacite/application-57cd1168a3e864610bbb73d28dd17b4a8fe846f1421cc372723626a97d956ade.css" media="all" />
+<script src="/assets/stash_engine/application-fa288595311b5fa66c4c1f0657bc821b97a1c08198a42c6e639137eadc78a7f5.js" data-turbolinks-track="true"></script>
+<script src="/assets/stash_datacite/application-36670f2795c11a1efce364e5d7a292ecf033358d52d38d1c9985d3bd6338d3a5.js" data-turbolinks-track="true"></script>
+<script src="/assets/stash_engine/moment.min-d322392161a44036fa25d2261446b912bdcbd01e5e75b30e97675e5a8b0429a0.js"></script>
+  <link rel="linkset" type="application/linkset" href="https://datadryad.org/dataset/doi:10.5061/dryad.6hdr7sr8z/linkset">
+<link rel="linkset" type="application/linkset+json" href="https://datadryad.org/dataset/doi:10.5061/dryad.6hdr7sr8z/linkset.json">
+<script data-autotrack="false" src="https://cdn.jsdelivr.net/npm/@datacite/datacite-tracker"></script>
+<script>
+	const { trackMetric } = DataCiteTracker.Tracker({
+		repoId: 'da-80l49bsf',
+		trackLocalhost: true,
+	});
+	let dc_download = DataCiteTracker.MetricType.Download;
+	trackMetric(DataCiteTracker.MetricType.View, { doi: '10.5061/dryad.6hdr7sr8z' });
+
+	document.addEventListener("DOMContentLoaded", function(){
+		// track individual downloads
+		const downloadLinks = document.querySelectorAll('a.js-individual-dl');
+		downloadLinks.forEach((link) => {
+			link.addEventListener('click', (e) => {
+				trackMetric(DataCiteTracker.MetricType.Download, { doi: '10.5061/dryad.6hdr7sr8z' });
+			});
+		});
+
+		const downloadFullLinks = document.querySelectorAll('button.js-download');
+		downloadFullLinks.forEach((link) => {
+			link.addEventListener('click', (e) => {
+				trackMetric(DataCiteTracker.MetricType.Download, { doi: '10.5061/dryad.6hdr7sr8z' });
+			});
+		});
+	});
+</script>
+<script type="text/javascript" src="https://16077a4ae659.us-west-2.captcha-sdk.awswaf.com/16077a4ae659/jsapi.js" defer></script>
+<script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.min.mjs" defer></script>
+
+  <script type="text/javascript" src="/assets/dataload-90f2764467b229ce595d6b8ac97144fb1ee493c8044a17305ba7dbc7409249dc.js" defer></script>
+</head>
+<body class='landing_show'>
+  
+  
+<header class=" c-header">
+  <a class="c-skipnav" href="#maincontent">Skip to main content</a>
+  <div class="c-header__logos">
+    <a class="c-header__dash-logo-link js-nav-out" href="/">
+      <div><img class="c-header__dash-logo-svg" alt="Dryad" src="/assets/stash_engine/logo_dryad-3b170a9dbd909dd203863e757c8c58231ed47ee35d17bf9288bfa42f587afb6b.png" /></div>
+</a>  </div>
+  <nav class="c-header__nav js-header__nav" aria-label="Main">
+  <ul class="c-header__nav-group" id="mobile-nav-bar">
+    <li class="c-header__nav-item c-pot-item"><a class="js-nav-out" href="/pots">Explore</a>
+    <li class="c-header__nav-item show-mobile">
+      <form class="button_to" method="get" action="/sessions/choose_login"><button class="c-header__menu-button" title="Login and then submit a new dataset" type="submit">Submit</button></form>
+    </li>
+      <li class="c-header__nav-item hide-mobile"><a class="js-nav-out" href="/search/advanced">Advanced search</a></li>
+      <li class="c-header__nav-item last-child">
+        <form role="search" class="o-global-search c-header__global-search" action="/search" accept-charset="UTF-8" method="get">
+          <input name="utf8" value="✓" type="hidden">
+          <label class="o-global-search__label" for="search-field-input1">Search Dryad data</label>
+          <input class="o-global-search__input" id="search-field-input1" type="search" name="q" placeholder="Search">
+          <button aria-label="Search data" class="o-global-search__submit-button" type="submit" id="search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+        </form>
+      </li>
+    <li class="c-header__nav-item show-mobile">
+      <button id="header-menu-button" aria-haspopup="menu" class="c-header__menu-button" aria-controls="site-menu" aria-expanded="false">More <i class="fa fa-bars" aria-hidden="true"></i></button>
+    </li>
+  </ul>
+
+  <ul class="c-header__nav-group" id="site-menu">
+
+    <li class="c-header__nav-item">
+      <button class="c-header_nav-button" aria-haspopup="menu" aria-expanded="false" aria-controls="about-menu">About</button>
+      <ul class="c-header__nav-submenu" id="about-menu" hidden>
+        <li><a href="/about">Who we are</a></li>
+        <li><a href="/mission">What we do</a></li>
+      </ul>
+    </li>
+
+    <li class="c-header__nav-item">
+      <a href="/join_us">Partner with us</a>
+    </li>
+    <li class="c-header__nav-item">
+      <a href="/support_us">Support us</a>
+    </li>
+
+    <li class="c-header__nav-item"><a href="/help">Get help</a></li>
+
+    <li class="c-header__nav-item">  <a id="log-in-out" class="js-nav-out" href="/sessions/choose_login">Login</a>
+</li>
+  </ul>
+</nav>
+
+</header>
+
+  
+
+<script type="text/javascript">
+$(document).ready(function(e) {
+    $('.flash_button').click(function() {
+      $( this ).parent().remove();
+    });
+});
+</script>
+
+    <main id="maincontent">
+    <!-- Track View for COUNTER and new DataCite metrics widget -->
+<div class="c-columns">
+	<article class="t-landing__main c-columns__content">
+		<div id="display_resource">
+  	    <h1 class="o-heading__level1">TraitAM, a global spore trait database for arbuscular mycorrhizal fungi</h1>
+<div class="t-landing__metadata o-metadata">
+  	<p class="o-metadata__author-list">
+  <a class="o-metadata__author" href="/search?orcid=0000-0002-7232-1757">Chaudhary, Bala</a><a class="o-metadata__link" aria-label="Affiliation 1" href="#aff1527">1</a><a href="mailto:bala.chaudhary@dartmouth.edu" class="o-metadata__link" aria-label="Email Bala Chaudhary" target="_blank" title="bala.chaudhary@dartmouth.edu" rel="noreferrer"><i class="fas fa-envelope" aria-hidden="true"></i></a><a href="https://orcid.org/0000-0002-7232-1757" class="o-metadata__link" target="_blank" aria-label="Bala Chaudhary ORCID profile (opens in new window)" title="ORCID: 0000-0002-7232-1757" rel="noreferrer"><i class="fab fa-orcid" aria-hidden="true"></i></a>; <a class="o-metadata__author" href="/search?orcid=0000-0001-6451-5087">Nokes, Liam</a><a class="o-metadata__link" aria-label="Affiliation 1" href="#aff1527">1</a><a href="mailto:liamnokes@gmail.com" class="o-metadata__link" aria-label="Email Liam Nokes" target="_blank" title="liamnokes@gmail.com" rel="noreferrer"><i class="fas fa-envelope" aria-hidden="true"></i></a><a href="https://orcid.org/0000-0001-6451-5087" class="o-metadata__link" target="_blank" aria-label="Liam Nokes ORCID profile (opens in new window)" title="ORCID: 0000-0001-6451-5087" rel="noreferrer"><i class="fab fa-orcid" aria-hidden="true"></i></a>; <span class="o-metadata__author">Gonzalez, Jennifer</span><a class="o-metadata__link" aria-label="Affiliation 1" href="#aff1527">1</a><a href="mailto:jengonzalezvt@gmail.com" class="o-metadata__link" aria-label="Email Jennifer Gonzalez" target="_blank" title="jengonzalezvt@gmail.com" rel="noreferrer"><i class="fas fa-envelope" aria-hidden="true"></i></a>; <span class="o-metadata__author">Cooper, Peri</span><a class="o-metadata__link" aria-label="Affiliation 2" href="#aff196">2</a><a href="mailto:cbrookscooper@cicswrightwood.org" class="o-metadata__link" aria-label="Email Peri Cooper" target="_blank" title="cbrookscooper@cicswrightwood.org" rel="noreferrer"><i class="fas fa-envelope" aria-hidden="true"></i></a>; <span class="o-metadata__author">Katula, Anne</span><a class="o-metadata__link" aria-label="Affiliation 1" href="#aff1527">1</a><a href="mailto:anne.m.katula.24@dartmouth.edu" class="o-metadata__link" aria-label="Email Anne Katula" target="_blank" title="anne.m.katula.24@dartmouth.edu" rel="noreferrer"><i class="fas fa-envelope" aria-hidden="true"></i></a>; <span class="o-metadata__author">Mares, Emma</span><a class="o-metadata__link" aria-label="Affiliation 3" href="#aff1402">3</a><a href="mailto:emma.mares@gmail.com" class="o-metadata__link" aria-label="Email Emma Mares" target="_blank" title="emma.mares@gmail.com" rel="noreferrer"><i class="fas fa-envelope" aria-hidden="true"></i></a>; <a class="o-metadata__author" href="/search?orcid=0000-0001-9086-7895">Pehim Limbu, Smriti</a><a class="o-metadata__link" aria-label="Affiliation 1" href="#aff1527">1</a><a href="mailto:smriti.pehim.limbu@dartmouth.edu" class="o-metadata__link" aria-label="Email Smriti Pehim Limbu" target="_blank" title="smriti.pehim.limbu@dartmouth.edu" rel="noreferrer"><i class="fas fa-envelope" aria-hidden="true"></i></a><a href="https://orcid.org/0000-0001-9086-7895" class="o-metadata__link" target="_blank" aria-label="Smriti Pehim Limbu ORCID profile (opens in new window)" title="ORCID: 0000-0001-9086-7895" rel="noreferrer"><i class="fab fa-orcid" aria-hidden="true"></i></a>; <span class="o-metadata__author">Robinson, Jannetta</span><a class="o-metadata__link" aria-label="Affiliation 4" href="#aff289">4</a><a href="mailto:Jannetta.Robinson@colorado.edu" class="o-metadata__link" aria-label="Email Jannetta Robinson" target="_blank" title="Jannetta.Robinson@colorado.edu" rel="noreferrer"><i class="fas fa-envelope" aria-hidden="true"></i></a>; <span class="o-metadata__author">Aguilar-Trigueros, Carlost</span><a class="o-metadata__link" aria-label="Affiliation 5" href="#aff154">5</a><a href="mailto:calgit@gmail.com" class="o-metadata__link" aria-label="Email Carlost Aguilar-Trigueros" target="_blank" title="calgit@gmail.com" rel="noreferrer"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+	</p>
+  <div class="o-metadata__aff-list">
+  	<p role="heading" aria-level="2"><button class="o-button__plain-text4" id="affiliation-list-button" aria-expanded="false" aria-controls="affiliation-list">Author affiliations<i class="fas fa-caret-down" aria-hidden="true"></i></button></p>
+  	<ol id="affiliation-list" hidden>
+  		<li id="aff1527"><a href="/search?org=https%3A%2F%2Fror.org%2F049s0rh22">Dartmouth College</a></li>
+  		<li id="aff196"><a href="/search?org=https%3A%2F%2Fror.org%2F05bnh6r87">Cornell University</a></li>
+  		<li id="aff1402"><a href="/search?org=https%3A%2F%2Fror.org%2F04xtx5t16">DePaul University</a></li>
+  		<li id="aff289"><a href="/search?org=https%3A%2F%2Fror.org%2F02ttsq026">University of Colorado Boulder</a></li>
+  		<li id="aff154"><a href="/search?org=https%3A%2F%2Fror.org%2F05n3dz165">University of Jyväskylä</a></li>
+  	</ol>
+  </div>
+  <script type="text/javascript">
+  	document.getElementById('affiliation-list-button').addEventListener('click', (e) => {
+  		const list = document.getElementById('affiliation-list')
+  		const button = document.getElementById('affiliation-list-button')
+  		if (list.hasAttribute('hidden')) {
+	  		button.setAttribute('aria-expanded', 'true')
+  		} else {
+  			button.setAttribute('aria-expanded', 'false')
+	  	}
+	  	button.lastElementChild?.classList.toggle('fa-caret-down')
+	  	button.lastElementChild?.classList.toggle('fa-caret-up')
+	  	list.toggleAttribute('hidden')
+  	})
+  	const openHash = () => {
+  		const hashed = document.getElementById(window.location.hash.substring(1))
+			if (hashed && hashed.parentElement.hasAttribute('hidden')) {
+	    	document.getElementById('affiliation-list-button').click()
+	    }
+  	}
+  	if (window.location.hash) openHash()
+  	window.addEventListener('hashchange', openHash)
+  </script>
+
+  <div class="o-metadata__group2">
+  <span class="o-metadata__group2-item">Published Mar 28, 2025
+  on Dryad</span>.
+    <span class="o-metadata__group2-item">
+      https://doi.org/10.5061/dryad.6hdr7sr8z
+    </span>
+</div>
+
+</div>
+
+
+
+<div class="data_files_section">
+  <h2>Data files</h2>
+  <div>
+    <!-- list individual files -->
+      <details id="download_resource" class="c-file-group"  open>
+        <summary role="button" class="o-showhide__summary c-file-group__summary">
+          <span>Mar 28, 2025 version files</span>
+          <span>679.47 KB</span>
+        </summary>
+        <form id="download-select-form" ></form>
+        <ul class="c-file-group__list">
+            <li>
+              <span>
+                <a target="_blank" class="js-individual-dl" href="/downloads/file_stream/3985003"><i class='fas fa-download' role='img' aria-label='Download'></i>DataRecord_1_CalculatedTraitMetrics_18Jun2024.csv</a>
+                <div style="min-width: 80px; text-align: center;">
+                    <div id="file_preview_check3985003" data-load="/data_file/preview_check/3985003.js" aria-live="polite" aria-busy="true">
+                      <i class="fas fa-spin fa-spinner" aria-hidden="true"></i>
+                    </div>
+                </div>
+              </span>
+              <div>
+                35.69 KB
+                      <input class="select-file-download" data-size="35689" type="checkbox" name="DataRecord_1_CalculatedTraitMetrics_18Jun2024.csv" checked hidden aria-label="Select DataRecord_1_CalculatedTraitMetrics_18Jun2024.csv for download" form="download-select-form">
+              </div>
+            </li>
+            <li>
+              <span>
+                <a target="_blank" class="js-individual-dl" href="/downloads/file_stream/3985013"><i class='fas fa-download' role='img' aria-label='Download'></i>DataRecord_2_TraitAMraw_18Jun2024.csv.csv</a>
+                <div style="min-width: 80px; text-align: center;">
+                    <div id="file_preview_check3985013" data-load="/data_file/preview_check/3985013.js" aria-live="polite" aria-busy="true">
+                      <i class="fas fa-spin fa-spinner" aria-hidden="true"></i>
+                    </div>
+                </div>
+              </span>
+              <div>
+                43.48 KB
+                      <input class="select-file-download" data-size="43484" type="checkbox" name="DataRecord_2_TraitAMraw_18Jun2024.csv.csv" checked hidden aria-label="Select DataRecord_2_TraitAMraw_18Jun2024.csv.csv for download" form="download-select-form">
+              </div>
+            </li>
+            <li>
+              <span>
+                <a target="_blank" class="js-individual-dl" href="/downloads/file_stream/3985011"><i class='fas fa-download' role='img' aria-label='Download'></i>DataRecord_3_TraitMetricsCode_18Jun2024.R</a>
+                <div style="min-width: 80px; text-align: center;">
+                </div>
+              </span>
+              <div>
+                6.08 KB
+                      <input class="select-file-download" data-size="6084" type="checkbox" name="DataRecord_3_TraitMetricsCode_18Jun2024.R" checked hidden aria-label="Select DataRecord_3_TraitMetricsCode_18Jun2024.R for download" form="download-select-form">
+              </div>
+            </li>
+            <li>
+              <span>
+                <a target="_blank" class="js-individual-dl" href="/downloads/file_stream/3985008"><i class='fas fa-download' role='img' aria-label='Download'></i>DataRecord_4_SpeciesDescriptions_18Jun2024.csv</a>
+                <div style="min-width: 80px; text-align: center;">
+                    <div id="file_preview_check3985008" data-load="/data_file/preview_check/3985008.js" aria-live="polite" aria-busy="true">
+                      <i class="fas fa-spin fa-spinner" aria-hidden="true"></i>
+                    </div>
+                </div>
+              </span>
+              <div>
+                66.74 KB
+                      <input class="select-file-download" data-size="66741" type="checkbox" name="DataRecord_4_SpeciesDescriptions_18Jun2024.csv" checked hidden aria-label="Select DataRecord_4_SpeciesDescriptions_18Jun2024.csv for download" form="download-select-form">
+              </div>
+            </li>
+            <li>
+              <span>
+                <a target="_blank" class="js-individual-dl" href="/downloads/file_stream/3985009"><i class='fas fa-download' role='img' aria-label='Download'></i>DataRecord_5_SpeciesListWithAccnNum_Oct2023.csv</a>
+                <div style="min-width: 80px; text-align: center;">
+                    <div id="file_preview_check3985009" data-load="/data_file/preview_check/3985009.js" aria-live="polite" aria-busy="true">
+                      <i class="fas fa-spin fa-spinner" aria-hidden="true"></i>
+                    </div>
+                </div>
+              </span>
+              <div>
+                7.41 KB
+                      <input class="select-file-download" data-size="7407" type="checkbox" name="DataRecord_5_SpeciesListWithAccnNum_Oct2023.csv" checked hidden aria-label="Select DataRecord_5_SpeciesListWithAccnNum_Oct2023.csv for download" form="download-select-form">
+              </div>
+            </li>
+            <li>
+              <span>
+                <a target="_blank" class="js-individual-dl" href="/downloads/file_stream/3985004"><i class='fas fa-download' role='img' aria-label='Download'></i>DataRecord_6_LSUseqsLROR-FLR2_28Oct2023.fasta</a>
+                <div style="min-width: 80px; text-align: center;">
+                </div>
+              </span>
+              <div>
+                191.08 KB
+                      <input class="select-file-download" data-size="191075" type="checkbox" name="DataRecord_6_LSUseqsLROR-FLR2_28Oct2023.fasta" checked hidden aria-label="Select DataRecord_6_LSUseqsLROR-FLR2_28Oct2023.fasta for download" form="download-select-form">
+              </div>
+            </li>
+            <li>
+              <span>
+                <a target="_blank" class="js-individual-dl" href="/downloads/file_stream/3985005"><i class='fas fa-download' role='img' aria-label='Download'></i>DataRecord_7_FinalTree_Oct2023.tre</a>
+                <div style="min-width: 80px; text-align: center;">
+                </div>
+              </span>
+              <div>
+                81.48 KB
+                      <input class="select-file-download" data-size="81480" type="checkbox" name="DataRecord_7_FinalTree_Oct2023.tre" checked hidden aria-label="Select DataRecord_7_FinalTree_Oct2023.tre for download" form="download-select-form">
+              </div>
+            </li>
+            <li>
+              <span>
+                <a target="_blank" class="js-individual-dl" href="/downloads/file_stream/3985006"><i class='fas fa-download' role='img' aria-label='Download'></i>DataRecord_8_PhyloanalysisCode_28Oct2023.txt</a>
+                <div style="min-width: 80px; text-align: center;">
+                    <div id="file_preview_check3985006" data-load="/data_file/preview_check/3985006.js" aria-live="polite" aria-busy="true">
+                      <i class="fas fa-spin fa-spinner" aria-hidden="true"></i>
+                    </div>
+                </div>
+              </span>
+              <div>
+                241.71 KB
+                      <input class="select-file-download" data-size="241707" type="checkbox" name="DataRecord_8_PhyloanalysisCode_28Oct2023.txt" checked hidden aria-label="Select DataRecord_8_PhyloanalysisCode_28Oct2023.txt for download" form="download-select-form">
+              </div>
+            </li>
+            <li>
+              <span>
+                <a target="_blank" class="js-individual-dl" href="/downloads/file_stream/3985010"><i class='fas fa-download' role='img' aria-label='Download'></i>README.md</a>
+                <div style="min-width: 80px; text-align: center;">
+                </div>
+              </span>
+              <div>
+                5.80 KB
+                      <input class="select-file-download" data-size="5802" type="checkbox" name="README.md" checked hidden aria-label="Select README.md for download" form="download-select-form">
+              </div>
+            </li>
+        </ul>
+      </details>
+    <div id="file_preview_box" role="status"></div>
+    <!-- full download second -->
+    <div class="o-download">
+  <form id="zip_download" action="/dataset/downloadZip/doi_10_5061_dryad_6hdr7sr8z__v20250328.zip" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="p72LU7J29fF2xSospz1Vundnt7rCRGOKdjnOPJFKgljvKThypo3WCxcEoeUsVPNgBfWDJbSFpirmOumDXcR-mw" autocomplete="off" />
+      <div id="file_downloads"></div>
+      <p class="download-info"><span>Click names to download individual files</span>
+      <button type="button" class="o-download__files js-download" id="download_zip_button" >
+        <span id="download_icon" aria-hidden="true"></span>
+        <span role="status">Download full dataset</span>
+      </button>
+     </p>
+</form>  <div class="screen-reader-only" id="accessible-dl-msg" aria-live="assertive"></div>
+</div>
+
+  </div>
+</div>
+<script type="text/javascript">
+  const load_preview = (n) => {
+    const box = document.getElementById('file_preview_box');
+    box.innerHTML = `<div class="file_preview"><p role="heading" level="3" id="preview_file_name"><span>Preview: ${n}</span></p><p><i class="fa fa-spin fa-spinner" aria-label="Loading" role="img"></i></p></div>`;
+    box.scrollIntoView();
+  }
+  const close_preview = () => {
+    document.getElementById('file_preview_box').innerHTML = '';
+  }
+</script>
+
+
+  <h2 class="o-heading__level2">Abstract</h2>
+  <div class="t-landing__text-wall">
+    <p>Knowledge regarding organismal traits supports a better understanding of the relationship between form and function and can be used to predict the consequences of environmental stressors on ecological and evolutionary processes. Most plants on Earth form symbioses with mycorrhizal fungi, but our ability to make trait-based inferences for these fungi is limited due to a lack of publicly available trait data. Here, we present TraitAM, a comprehensive database of multiple spore traits for all described species of the most common group of mycorrhizal fungi, the arbuscular mycorrhizal (AM) fungi (subphylum Glomeromycotina). Trait data for 344 species were mined from original species descriptions and used to calculate newly developed fungal trait metrics that can be employed to explore both intra- and inter-specific variation in traits. TraitAM also includes an updated phylogenetic tree that can be used to conduct phylogenetically-informed multivariate analyses of AM fungal traits. TraitAM will aid our further understanding of the biology, ecology, and evolution of these globally widespread, symbiotic fungi.</p>
+  </div>
+
+
+
+
+
+
+    <div id="landing_readme">
+      <h2 class="expand-button"><button id="readme" aria-expanded="false" aria-controls="readme-sec">README: TraitAM, a global spore trait database for arbuscular mycorrhizal fungi</button></h2>
+    <div id="readme-sec" class="t-landing__text-wall" hidden>
+      
+<p><a href="https://doi.org/10.5061/dryad.6hdr7sr8z" target="_blank">https://doi.org/10.5061/dryad.6hdr7sr8z<i class="fas fa-arrow-up-right-from-square exit-icon" aria-label=" (opens in new window)" role="img"></i></a></p>
+<p>Contact: Dr. V. Bala Chaudhary, <a href="mailto:bala.chaudhary@dartmouth.edu" target="_blank">bala.chaudhary@dartmouth.edu<i class="fas fa-arrow-up-right-from-square exit-icon" aria-label=" (opens in new window)" role="img"></i></a></p>
+<p><strong>Filenames</strong>: All files have names of the form "DataRecord_(number)<em>(contents)</em>(date updated, DDMonYYYY)," for example, "DataRecord_1_CalculatedTraitMetrics_18Jun2024.csv" is a data record #1, contains "calculated trait metrics," and was last updated on June 18th, 2024.</p>
+<p>TraitAM contains data on the spore traits of all Arbuscular Mycorrhizal (AM) fungi with available species descriptions through 2023. Data were collected by manually reading species descriptions and extracting relevant information from 2019 to 2024. For full description, methods, and metadata see publication:</p>
+<p>Chaudhary, V. B., Gonzalez, J. B., Nokes, L. F., Cooper, P. O., Katula, A. M., Mares, E. C., Limbu, S. P., Robinson, J. N., Aguilar-Trigueros, C. A. (2024). TraitAM, a global spore trait and phylogeny database for arbuscular mycorrhizal fungi. Manuscript submitted for publication.</p>
+<p><strong>Files:</strong></p>
+<ul>
+<li>DataRecord_1_CalculatedTraitMetrics_18Jun2024.csv: Table containing the calculated trait metrics for all taxa in the database, including spore volume, shape, color, wall investment, and ornamentation height.</li>
+</ul>
+<ul>
+<li>DataRecord_2_TraitAMraw_18Jun2024.csv: Table containing the raw data used to calculate the trait metrics in DataRecord_1. Cells containing "NA" reflect data that was not present in the species descriptions.</li>
+</ul>
+<ul>
+<li>DataRecord_3_TraitMetricsCode_18Jun2024.R: R script containing the annotated code used to calculate the trait metrics in DataRecord_1 from the raw data in DataRecord_2.</li>
+</ul>
+<ul>
+<li>DataRecord_4_SpeciesDescriptions_18Jun2024.csv: Table containing a list of all species in the TraitAM database and the bibliographic information for the paper containing the species description we used to collect data on the species for DataRecord_2.</li>
+</ul>
+<ul>
+<li>DataRecord_5_SpeciesListWithAccnNum_Oct2023.csv: Table containing a list of species used in the creation of the Arbuscular Mycorrhizal fungal phylogeny, with the GenBank accession numbers for the sequences used in the creation of the phylogenetic tree.</li>
+</ul>
+<ul>
+<li>DataRecord_6_LSUseqsLROR-FLR2_28Oct2023.fasta: LSU sequences used in phylogenetic analysis, trimmed to LROR-FLR2 (n=231).</li>
+</ul>
+<ul>
+<li>DataRecord_7_FinalTree_Oct2023.tre: Phylogenetic tree generated from DataRecord_6.</li>
+</ul>
+<ul>
+<li>DataRecord_8_PhyloanalysisCode_28Oct2023.txt: Code used in phylogenetic analysis for Maximum Likelihood and Bayesian Inference approaches used to generate DataRecord_7.</li>
+</ul>
+<p><strong>Metadata for DataRecord_1:</strong></p>
+<ul>
+<li>species = species binomial nomenclature, followed by “_morpha” for acaulosporoid morphs and “_morphg” for glomoid morphs, if applicable</li>
+</ul>
+<ul>
+<li>order = Taxonomic order of the species</li>
+</ul>
+<ul>
+<li>family = Taxonomic family of the species</li>
+</ul>
+<ul>
+<li>genus = Genus</li>
+</ul>
+<ul>
+<li>vol_mean = Spore volume (μm3)</li>
+</ul>
+<ul>
+<li>shape_mean = Spore shape, aspect ratio of spore length (μm) / spore width (μm)</li>
+</ul>
+<ul>
+<li>color_most = Color mode (see metadata for DataRecord_2)</li>
+</ul>
+<ul>
+<li>investment_mean = Spore wall investment, ratio of wall volume / total spore volume</li>
+</ul>
+<ul>
+<li>orn_height_mean = Mean ornamentation height (μm) (see metadata for DataRecord_2)</li>
+</ul>
+<p><strong>Metadata for DataRecord_2:</strong></p>
+<ul>
+<li>species = Species binomial nomenclature</li>
+</ul>
+<ul>
+<li>order = Taxonomic order of the species</li>
+</ul>
+<ul>
+<li>family = Taxonomic family of the species</li>
+</ul>
+<ul>
+<li>genus = Genus</li>
+</ul>
+<ul>
+<li>color_low = “Minimum” color: To standardize the color data across the database, we assigned the following ordinal scale for common color along a pigmentation gradient ranging from 0 (hyaline, no pigmentation) to 6 (fully melanized, dark). The intermediate values include 1, white to cream or pink, 2, yellow, 3, green, 4, orange to red, and 5, brown. For each species we include three color data points: minimum, mode, and maximum. If a spore with “yellow to yellow orange” it would have color minimum 2, color mode 2, and color maximum 4.</li>
+</ul>
+<ul>
+<li>color_most = Color mode, see above</li>
+</ul>
+<ul>
+<li>color_high = Color maximum, see above</li>
+</ul>
+<ul>
+<li>orn_height_min = Minimum height of ornamentation, as given in species description. 0 if there is no ornamentation</li>
+</ul>
+<ul>
+<li>orn_height_mean = Mean height of ornamentation, as given or as the average of the minimum and maximum given if not. 0 if there is no ornamentation</li>
+</ul>
+<ul>
+<li>orn_height_max = Maximum height of ornamentation, as given. 0 if there is no maximum ornamentation</li>
+</ul>
+<ul>
+<li>orn_diam_min = Minimum diameter of ornamentation, as given in species description. 0 if there is no ornamentation</li>
+</ul>
+<ul>
+<li>orn_diam_mean = Mean diameter of ornamentation, as given or as the average of the minimum and maximum given if not. 0 if there is no ornamentation</li>
+</ul>
+<ul>
+<li>orn_diam_max = Maximum diameter of ornamentation, as given. 0 if there is no maximum ornamentation</li>
+</ul>
+<ul>
+<li>min_wall_thickness = Minimum wall thickness of the spores</li>
+</ul>
+<ul>
+<li>mean_wall_thickness = Mean wall thickness of the spores</li>
+</ul>
+<ul>
+<li>max_wall_thickness = Maximum wall thickness of the spores</li>
+</ul>
+<ul>
+<li>dim1.min2 = Dimension 1 minimum 2 (lower minimum). Spore dimensions are given for each spore shape as ranges with up to four values describing the distribution of each dimension. The traitAM database includes eight dimension data points for each spore shape described: dimension lower minimum, dimension higher minimum, dimension lower maximum, and dimension higher maximum for two dimensions, length and width.</li>
+</ul>
+<ul>
+<li>dim1.min = Dimension 1 minimum</li>
+</ul>
+<ul>
+<li>dim1.max = Dimension 1 lower maximum</li>
+</ul>
+<ul>
+<li>dim1.max2 = Dimension 1 upper maximum</li>
+</ul>
+<ul>
+<li>dim2.min2 = Dimension 2 lower minimum</li>
+</ul>
+<ul>
+<li>dim2.min = Dimension 2 upper minimum</li>
+</ul>
+<ul>
+<li>dim2.max = Dimension 2 lower maximum</li>
+</ul>
+<ul>
+<li>dim2.max2 = Dimension 2 upper maximum</li>
+</ul>
+<p>Changelog: all changes to the TraitAM database and any files will be logged here with a timestamp and a description of changes.</p>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "Dataset",
+  "@id": "https://doi.org/10.5061/dryad.6hdr7sr8z",
+  "name": "TraitAM, a global spore trait database for arbuscular mycorrhizal fungi",
+  "description": [
+    "Knowledge regarding organismal traits supports a better understanding of the relationship between form and function and can be used to predict the consequences of environmental stressors on ecological and evolutionary processes. Most plants on Earth form symbioses with mycorrhizal fungi, but our ability to make trait-based inferences for these fungi is limited due to a lack of publicly available trait data. Here, we present TraitAM, a comprehensive database of multiple spore traits for all described species of the most common group of mycorrhizal fungi, the arbuscular mycorrhizal (AM) fungi (subphylum Glomeromycotina). Trait data for 344 species were mined from original species descriptions and used to calculate newly developed fungal trait metrics that can be employed to explore both intra- and inter-specific variation in traits. TraitAM also includes an updated phylogenetic tree that can be used to conduct phylogenetically-informed multivariate analyses of AM fungal traits. TraitAM wi...",
+    "",
+    "",
+    "# TraitAM, a global spore trait database for arbuscular mycorrhizal fungi\n\n[https://doi.org/10.5061/dryad.6hdr7sr8z](https://doi.org/10.5061/dryad.6hdr7sr8z)\n\nContact: Dr. V. Bala Chaudhary, [bala.chaudhary@dartmouth.edu](mailto:bala.chaudhary@dartmouth.edu)\n\n**Filenames**: All files have names of the form \"DataRecord_(number)*(contents)*(date updated, DDMonYYYY),\" for example, \"DataRecord_1_CalculatedTraitMetrics_18Jun2024.csv\" is a data record #1, contains \"calculated trait metrics,\" and was last updated on June 18th, 2024.\n\nTraitAM contains data on the spore traits of all Arbuscular Mycorrhizal (AM) fungi with available species descriptions through 2023. Data were collected by manually reading species descriptions and extracting relevant information from 2019 to 2024. For full description, methods, and metadata see publication:\n\nChaudhary, V. B., Gonzalez, J. B., Nokes, L. F., Cooper, P. O., Katula, A. M., Mares, E. C., Limbu, S. P., Robinson, J. N., Aguilar-Trigueros, C. A. (2024). ...",
+    ""
+  ],
+  "url": "http://datadryad.org/dataset/doi%253A10.5061%252Fdryad.6hdr7sr8z",
+  "contentUrl": [
+    "http://datadryad.org/downloads/file_stream/3985003",
+    "http://datadryad.org/downloads/file_stream/3985004",
+    "http://datadryad.org/downloads/file_stream/3985005",
+    "http://datadryad.org/downloads/file_stream/3985006",
+    "http://datadryad.org/downloads/file_stream/3985008",
+    "http://datadryad.org/downloads/file_stream/3985009",
+    "http://datadryad.org/downloads/file_stream/3985010",
+    "http://datadryad.org/downloads/file_stream/3985011",
+    "http://datadryad.org/downloads/file_stream/3985013"
+  ],
+  "identifier": "https://doi.org/10.5061/dryad.6hdr7sr8z",
+  "version": 6,
+  "isAccessibleForFree": true,
+  "keywords": [
+    "Mycorrhiza",
+    "Quantitative traits",
+    "Fungal spores"
+  ],
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "Bala Chaudhary",
+      "givenName": "Bala",
+      "familyName": "Chaudhary",
+      "sameAs": "http://orcid.org/0000-0002-7232-1757",
+      "affiliation": {
+        "@type": "Organization",
+        "sameAs": "https://ror.org/049s0rh22",
+        "name": "Dartmouth College"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Liam Nokes",
+      "givenName": "Liam",
+      "familyName": "Nokes",
+      "sameAs": "http://orcid.org/0000-0001-6451-5087",
+      "affiliation": {
+        "@type": "Organization",
+        "sameAs": "https://ror.org/049s0rh22",
+        "name": "Dartmouth College"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Jennifer Gonzalez",
+      "givenName": "Jennifer",
+      "familyName": "Gonzalez",
+      "affiliation": {
+        "@type": "Organization",
+        "sameAs": "https://ror.org/049s0rh22",
+        "name": "Dartmouth College"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Peri Cooper",
+      "givenName": "Peri",
+      "familyName": "Cooper",
+      "affiliation": {
+        "@type": "Organization",
+        "sameAs": "https://ror.org/05bnh6r87",
+        "name": "Cornell University"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Anne Katula",
+      "givenName": "Anne",
+      "familyName": "Katula",
+      "affiliation": {
+        "@type": "Organization",
+        "sameAs": "https://ror.org/049s0rh22",
+        "name": "Dartmouth College"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Emma Mares",
+      "givenName": "Emma",
+      "familyName": "Mares",
+      "affiliation": {
+        "@type": "Organization",
+        "sameAs": "https://ror.org/04xtx5t16",
+        "name": "DePaul University"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Smriti Pehim Limbu",
+      "givenName": "Smriti",
+      "familyName": "Pehim Limbu",
+      "sameAs": "http://orcid.org/0000-0001-9086-7895",
+      "affiliation": {
+        "@type": "Organization",
+        "sameAs": "https://ror.org/049s0rh22",
+        "name": "Dartmouth College"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Jannetta Robinson",
+      "givenName": "Jannetta",
+      "familyName": "Robinson",
+      "affiliation": {
+        "@type": "Organization",
+        "sameAs": "https://ror.org/02ttsq026",
+        "name": "University of Colorado Boulder"
+      }
+    },
+    {
+      "@type": "Person",
+      "name": "Carlost Aguilar-Trigueros",
+      "givenName": "Carlost",
+      "familyName": "Aguilar-Trigueros",
+      "affiliation": {
+        "@type": "Organization",
+        "sameAs": "https://ror.org/05n3dz165",
+        "name": "University of Jyväskylä"
+      }
+    }
+  ],
+  "distribution": {
+    "@type": "DataDownload",
+    "encodingFormat": "application/zip",
+    "contentUrl": "http://datadryad.org/api/v2/datasets/doi%253A10.5061%252Fdryad.6hdr7sr8z/download"
+  },
+  "temporalCoverage": [
+    "2024-07-23 22:00:01 UTC",
+    "2025-02-22 21:56:48 UTC",
+    "2025-03-28 00:00:00 UTC",
+    "2025-03-28 00:00:00 UTC"
+  ],
+  "spatialCoverage": [],
+  "citation": "http://doi.org/10.1038/s41597-025-04940-x",
+  "license": {
+    "@type": "CreativeWork",
+    "name": "Creative Commons Zero v1.0 Universal",
+    "license": "https://spdx.org/licenses/CC0-1.0.html"
+  },
+  "publisher": {
+    "@id": "https://datadryad.org",
+    "@type": "Organization",
+    "legalName": "Dryad Data Platform",
+    "name": "Dryad",
+    "url": "https://datadryad.org"
+  },
+  "provider": {
+    "@id": "https://datadryad.org"
+  }
+}
+</script>
+
+		</div>
+	</article>
+	<aside class="c-columns__sidebar">
+	  <div class="sidebox" id="sidebox-cite">
+  <div id="cite_section">
+  <h2><span id="expand-citation" role="button" tabindex="0" aria-expanded="false" aria-controls="dataset-citation">Citation<i class="fas fa-caret-down" aria-hidden="true"></i></span></h2>
+<button title="Copy citation" aria-label="Copy citation" class="copy-icon" data-item="Citation"><i class="fa fa-paste" role="status"></i><span>Copy</span></button>
+<p id="dataset-citation" hidden>Chaudhary, Bala; Nokes, Liam; Gonzalez, Jennifer et al. (2025). TraitAM, a global spore trait database for arbuscular mycorrhizal fungi [Dataset]. Dryad. <a href="https://doi.org/10.5061/dryad.6hdr7sr8z">https://doi.org/10.5061/dryad.6hdr7sr8z</a></p>
+
+<script type="text/javascript">
+  const expandCitation = (e) => {
+    const citation = document.getElementById('dataset-citation')
+    const button = document.getElementById('expand-citation')
+    if (citation.hasAttribute('hidden')) {
+      button.setAttribute('aria-expanded', 'true')
+    } else {
+      button.setAttribute('aria-expanded', 'false')
+    }
+    button.lastElementChild.classList.toggle('fa-caret-down')
+    button.lastElementChild.classList.toggle('fa-caret-up')
+    citation.toggleAttribute('hidden')
+  }
+  document.getElementById('expand-citation').addEventListener('click', expandCitation)
+  document.getElementById('expand-citation').addEventListener('keydown', (e) => {
+    if (e.key === ' ' || e.key === 'Enter') {
+      e.preventDefault()
+      expandCitation(e)
+    }
+  });
+</script>
+
+  </div>
+
+  <div id="show_metrics"
+       data-load="/landing/metrics/137585" aria-live="polite" aria-busy="true">
+    <i class="fas fa-spin fa-spinner" aria-hidden="true"></i>
+  </div>
+  
+    <div id="share_section">
+      <div id="share_buttons">
+  <h2>Share:</h2>
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://datadryad.org%2Fdataset%2Fdoi%3A10.5061%2Fdryad.6hdr7sr8z" title="Share on LinkedIn" data-share="linkedin" target="_blank" rel="noreferrer"><i class="fab fa-linkedin" aria-label="Share on LinkedIn (opens in new window)" role="img"></i></a>
+  <!-- BlueSky -->
+  <a href="https://bsky.app/intent/compose?text=Dryad+dataset%3A+TraitAM%2C+a+global+spore+trait+database+for+arbuscular+mycorrhizal+fungi%0Ahttps://datadryad.org%2Fdataset%2Fdoi%3A10.5061%2Fdryad.6hdr7sr8z" title="Share on Bluesky" data-share="bluesky" target="_blank" rel="noreferrer"><i class="fab fa-square-bluesky" aria-label="Share on Bluesky (opens in new window)" role="img"></i></a>
+  <!-- Reddit -->
+  <a href="https://www.reddit.com/submit?url=https://datadryad.org%2Fdataset%2Fdoi%3A10.5061%2Fdryad.6hdr7sr8z&title=Dryad+dataset%3A+TraitAM%2C+a+global+spore+trait+database+for+arbuscular+mycorrhizal+fungi" title="Share on Reddit" data-share="reddit" target="_blank" rel="noreferrer"><i class="fab fa-reddit-square" aria-label="Share on Reddit (opens in new window)" role="img"></i></a>
+  <!-- Mastodon -->
+  <a href="https://mastodonshare.com/?url=https://datadryad.org%2Fdataset%2Fdoi%3A10.5061%2Fdryad.6hdr7sr8z&text=Dryad+dataset%3A+TraitAM%2C+a+global+spore+trait+database+for+arbuscular+mycorrhizal+fungi" title="Share on Mastodon" data-share="mastodon" target="_blank" rel="noreferrer"><i class="fab fa-mastodon" aria-label="Share on Mastodon (opens in new window)" role="img"></i></a>
+  <!-- Facebook -->
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://datadryad.org%2Fdataset%2Fdoi%3A10.5061%2Fdryad.6hdr7sr8z" title="Share on Facebook" data-share="facebook" target="_blank" rel="noreferrer"><i class="fab fa-facebook-square" aria-label="Share on Facebook (opens in new window)" role="img"></i></a>
+  <!-- Email -->
+  <a href="mailto:?subject=Dryad+dataset%3A+TraitAM%2C+a+global+spore+trait+database+for+arbuscular+mycorrhizal+fungi&body=Citation%3A+Chaudhary%2C+Bala%3B+Nokes%2C+Liam%3B+Gonzalez%2C+Jennifer+et+al.+%282025%29.+TraitAM%2C+a+global+spore+trait+database+for+arbuscular+mycorrhizal+fungi+%5BDataset%5D.+Dryad.+https%3A%2F%2Fdoi.org%2F10.5061%2Fdryad.6hdr7sr8z%0A%0AAbstract%3A+" title="Share with email" data-share="email" target="_blank" rel="noreferrer"><i class="fa fa-envelope-square" aria-label="Share with email (opens in new window)" role="img"></i></a>
+  <!-- Copy -->
+  <button id="share-panel__copy-url" title="Copy link to this page"><i class="fa fa-share-square" aria-label="Copy link to this page" role="img"></i></button>
+</div>
+<div role="status">
+  <p id="copy-success" hidden><i class="fa fa-check" aria-hidden="true"></i> Link copied</p>
+</div>
+<script type="text/javascript">
+  document.getElementById('share-panel__copy-url').addEventListener('click', () => {
+    window.navigator.clipboard.writeText(window.location.href).then(async () => {
+      const flash = document.getElementById('copy-success');
+      flash.removeAttribute('hidden');
+      await new Promise(res => setTimeout(res, 3000));
+      flash.setAttribute('hidden', 'true');
+    });
+  })
+</script>
+
+    </div>
+
+    <div id="show_license"
+         data-load="/stash_datacite/licenses/details.js?resource_id=355108" aria-live="polite" aria-busy="true">
+      <i class="fas fa-spin fa-spinner" aria-hidden="true"></i>
+    </div>
+</div>
+
+<div class="sidebox" id="sidebox-search">
+  <div id="keyword_section">
+    <h2>Subject keywords</h2>
+    <div id="show_subjects"
+         data-load="/stash_datacite/subjects/landing.js?resource_id=355108" aria-live="polite" aria-busy="true">
+      <i class="fas fa-spin fa-spinner" aria-hidden="true"></i>
+    </div>
+  </div>
+    <div id="show_funding">
+  	<h2>Funding</h2>
+    <ul class="o-list">
+    	  <li>
+          <a href="/search?org=https%3A%2F%2Fror.org%2F021nxhr62">U.S. National Science Foundation</a>: <span><a href="/search?award=2205650&amp;funder=https%3A%2F%2Fror.org%2F021nxhr62">2205650</a></span>, <span>Division of Environmental Biology (DEB)</span>
+        </li>
+    </ul>
+  </div>
+
+</div>
+
+<div class="sidebox" id="sidebox-related_works">
+  <h2>Related works</h2>
+  <div id="show_related_works"
+       data-load="/stash_datacite/related_identifiers/show.js?resource_id=355108" aria-live="polite" aria-busy="true">
+    <p><i class="fas fa-spin fa-spinner" aria-hidden="true"></i></p>
+  </div>
+</div>
+
+	</aside>
+</div>
+
+
+    </main>
+  <footer class="c-footer" id="page-footer">
+  <div class="c-footer__link-group">
+    <div class="c-footer__policy-group">
+      <a href="/privacy">Privacy</a>
+      <a href="/accessibility" class="js-nav-out">Accessibility</a>
+      <a href="/terms">Terms of service</a>
+      <a href="/partner_terms">Partner terms</a>
+    </div>
+    <div class="c-footer__social-group">
+      <a href="/contact"><i class="far fa-envelope" aria-hidden="true"></i>Enquiries</a>
+      <a href="https://blog.datadryad.org/" class="js-nav-out"><i class="far fa-comment fa-flip-horizontal" aria-hidden="true" style="font-size: 1em"></i>Latest news</a>
+      <a href="https://blog.datadryad.org/about/subscribe" class="js-nav-out"><i class="far fa-bell" aria-hidden="true"></i>Subscribe</a>
+      <a href="https://blog.datadryad.org/jobs" class="js-nav-out"><i class="far fa-pen-to-square" aria-hidden="true"></i>Jobs &amp; opportunities</a>
+    </div>
+  </div>
+  <div class="c-footer__link-group">
+    <span>© 2026 Dryad. <a href="/terms#copyright">Content on this site is licensed for reuse</a>.</span>
+  </div>
+</footer>
+
+  <script type="text/javascript" src="/assets/interactions-8fa01490d92571af7ff7bd665239e44d863298fd45eb9562150e903a7cff939e.js"></script>
+  <dialog id="railsConfirmDialog" class="modalDialog" role="alertdialog" aria-labelledby="railsConfMsg" aria-modal="true">
+  <div>
+    <button id="railsConfirmDialogClose" class="button-close-modal" style="float: right;" aria-label="close" type="button"><i class="fas fa-close" aria-hidden="true"></i></button>
+    <h1 id="railsConfMsg" class="o-heading__level2" style="width: 30ch; max-width: 100%; float: left;"></h1>    
+    <div style="clear: both;">&nbsp;</div>
+    <div style="display: flex; justify-content: flex-end; column-gap: 1rem;">
+      <button id="railsConfirmDialogYes" class="o-button__plain-text2" style="padding: .5rem 2rem;" value="default">Yes</button>
+      <button id="railsConfirmDialogNo" class="o-button__plain-text3" style="padding: .5rem 2rem;" value="cancel">No</button>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  // adds the polyfill for firefox and some other browsers that are not up to date.
+  // https://github.com/GoogleChrome/dialog-polyfill
+
+  const modal = document.getElementById('railsConfirmDialog');
+  dialogPolyfill.registerDialog(modal);
+</script>
+  <dialog id="genericModalDialog" class="modalDialog" aria-modal="true" aria-labelledby="dialog-title">
+  <div>
+    <div class="modalClose">
+      <button id="genericModalClose" aria-label="Close dialog" type="button">
+        <i class="fas fa-close" aria-hidden="true"></i>
+      </button>
+    </div>
+    <!-- to display anything in the dialog, replace content within the genericModalContent (using Javascript) and attach any events
+      you need for what you add. The dialog comes with an event for closing and taking no action for the close button.
+
+      Open modal with <item>.showModal(); and close with <item>.close();
+      -->
+    <div id="genericModalContent" class="c-modal-content__normal">&nbsp;</div>
+  </div>
+</dialog>
+
+<script>
+  // adds the polyfill for firefox and some other browsers that are not up to date.
+  // https://github.com/GoogleChrome/dialog-polyfill
+
+  const modal2 = document.getElementById('genericModalDialog');
+  dialogPolyfill.registerDialog(modal2);
+
+  $('#genericModalClose').click(function(){
+    document.querySelector('#genericModalContent').classList.replace('c-modal-content__wide', 'c-modal-content__normal');
+    document.querySelector('#genericModalContent').classList.replace('c-modal-content__cedar','c-modal-content__normal');
+    $('#genericModalDialog')[0].close(); // uses [0] to get native object rather than jQuery object (I think)
+    $('#genericModalContent').html("");
+  });
+</script>
+
+  <script type="text/javascript" async>
+  const dlbutton = document.getElementById('download_zip_button');
+  if ("serviceWorker" in navigator) {
+    const zip_url = '/downloads/zip_assembly_info/355108';
+    const scope = '/dataset/';
+    const messageChannel = new MessageChannel();
+navigator.serviceWorker.register('/service-worker.js', { scope });
+let keepAlive = null;
+const dialog = document.getElementById('genericModalDialog');
+const dialogContent = document.getElementById('genericModalContent');
+const form = document.getElementById('zip_download');
+const inputs = document.getElementById('file_downloads');
+navigator.serviceWorker.ready.then(worker => {
+  worker.active.postMessage({type: 'PORT_INITIALIZATION', url: form.action}, [messageChannel.port2]); 
+});
+const insertFiles = async (files) => {
+  const selectForm = document.getElementById('download-select-form').elements
+  for (const f of files) {
+    if (selectForm[f.filename]?.checked) {
+      for (const k of Object.keys(f)) {
+        const i = document.createElement('input');
+        i.setAttribute('type', 'hidden');
+        i.setAttribute('name', k);
+        i.setAttribute('value', f[k]);
+        inputs.appendChild(i);
+      }
+    }
+  }
+  return true;
+}
+const loadFiles = async (files) => {
+  await insertFiles(files);
+  form.submit();
+  dlbutton.lastElementChild.innerHTML = 'Download in progress';
+  dialogContent.innerHTML = '<h1 id="dialog-title">Download in progress</h1><p>Closing this window may interrupt the dataset download. Please keep this window open until your download is complete.</p><p><span id="dl_filename"></span> <span id="dl_filesize"></span><br/><progress id="dl_progressbar" value="0" aria-label="Download progress"></progress></p>';
+  dialog.showModal();
+  keepAlive = setInterval(() => {
+    navigator.serviceWorker.ready.then(worker => {
+      worker.active.postMessage({type: 'KEEP_ALIVE'})
+    })
+  }, 10000);
+}
+const failMessage = () => {
+  if (dialog.open) dialog.close();
+  dialogContent.innerHTML = '<h1 id="dialog-title">Download error</h1><p>Please reload and try again, or download the individual files.</p>';
+  dialog.showModal();
+  dlbutton.lastElementChild.innerHTML = 'Download full dataset';
+  dlbutton.classList.add('o-download__files');
+  dlbutton.classList.remove('o-download__wait');
+  dlbutton.removeAttribute('disabled');
+}
+const checkResponse = async (response) => {
+  if (response.ok) {
+    const files = await response.json();
+    loadFiles(files);
+  } else if (response.status === 405) {
+    dialogContent.innerHTML = '<h1 id="dialog-title">Confirm you are human</h1><div id="captcha-div"></div>'
+    AwsWafCaptcha.renderCaptcha(document.getElementById('captcha-div'), {
+      apiKey: 'OqA0o1lGXgubzh918BKgrbWCLVFKb5xL3FLAIYf63QqbCTic7ynhvwViwoEdMzuKgvEHmbjbigMAdy6gLNyDRe4qhdiSwsaBMu0yVtDgS+sGd13E8WzeiysUXXKAF85+x8BVDr9VM1x/n6IT+4aLoAgYpYt51//u+wZCYal8WOXWIpkxz88GmF2JCoiEYn4GxDX9SlRyO8IiJ7Id55Fkq6zXtiZs9L9XHM4Pr/iF50wcT+/L1DgBCH+LUYGIYR04TdJQpgp0cD3kL7rMgmpLfeulydUu6ceYJPGgUVWzOguE5fsAzVbPzkNssRUo9ku0oz/ozDvUucntUEPMbrBSxC3EfoCM6aygV/riufSZm4jk9IV0pgUjvzXCrex8lTZtalefN451KiFTT9Ipa9ipjBKZuKDO2fTvsMK1xB82VsA9M9VmSLtMlkFA/LPJj/2A/mGno+kubKAkgWTRXTA0DTJ9/IQ4D+uSZsoWCidnCfUQk4/qkBZa6BOw8SB1n/IXDYTk5Uk4oDG0HuhUogJvwGKQVUSBzbcDdvmgxO8xcj6B7k7W0j64AO2sSKjAdG8BMhtouxeu71Gb76YBIrv3PswHmyESe5PYgeRuURUEZkL9OTON4lNWP4iKqP/D6e09SVWtlNpkv9aJKnsYQhOizCynKfGS/iWEvBXP70G4JOo=_0_1',
+      skipTitle: true,
+      onLoad: () => { if (!dialog.open) dialog.showModal(); },
+      onSuccess: async (token) =>  {
+        dialog.close();
+        dlbutton.focus();
+        const response = await AwsWafIntegration.fetch(zip_url);
+        checkResponse(response);
+      },
+      onError: failMessage,
+    });
+  } else {
+    failMessage();
+  }
+}
+dlbutton.addEventListener('click', async e => {
+  dlbutton.disabled = true;
+  dlbutton.classList.remove('o-download__files');
+  dlbutton.classList.add('o-download__wait');
+  dlbutton.lastElementChild.innerHTML = 'Preparing download';
+  const response = await AwsWafIntegration.fetch(zip_url);
+  checkResponse(response);
+})
+messageChannel.port1.start();
+messageChannel.port1.addEventListener("message", ({data}) => {
+  if (data.msg === 'Headers') {
+    const {filename, size} = data
+    document.getElementById('dl_filename').innerText = filename
+    document.getElementById('dl_filesize').innerText = `(${formatSizeUnits(Number(size))})`
+  } else if (data.msg == 'Streaming') {
+    document.getElementById('dl_progressbar').setAttribute('value', data.complete)
+  } else if (data.msg === 'Stream complete') {
+    inputs.innerHTML = '';
+    if (keepAlive) clearInterval(keepAlive);
+    dlbutton.classList.add('o-download__files');
+    dlbutton.classList.remove('o-download__wait');
+    dlbutton.lastElementChild.innerHTML = 'Download full dataset';
+    dlbutton.removeAttribute('disabled');
+    if (dialog.open) {
+      dialog.close();
+      dlbutton.focus();
+    }
+  }
+});
+
+  } else {
+    dlbutton.hidden = true;
+    document.getElementById('download_resource').classList.remove('large_download');
+  }
+</script>
+
+</body>
+</html>
